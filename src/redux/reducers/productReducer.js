@@ -19,7 +19,7 @@ export const selectedProductReducer = (
 ) => {
   switch (type) {
     case actionTypes.SELECTED_PRODUCT:
-      return { ...state, payload };
+      return { ...state, product: payload };
 
     default:
       return state;
